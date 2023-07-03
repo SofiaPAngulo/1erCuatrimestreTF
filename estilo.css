@@ -1,0 +1,494 @@
+ /*fondo transparente con foto centrada*/
+ body {
+     background-color: rgba(255, 255, 255, 0);
+     background-image: url("imagenes/caffe.jpeg");
+     background-position-x: center;
+     background-repeat: no-repeat;
+
+ }
+
+ /*foto en png con titulo y botonlogin*/
+ .logo {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     align-content: stretch;
+     justify-content: space-around;
+     border: none;
+     padding: 100px;
+     background-image: url("imagenes/c.png");
+     background-repeat: no-repeat;
+ }
+
+ /*titulo*/
+ h1 {
+     color: rgb(51, 73, 83);
+     font-family: monospace;
+     margin-top: 25px;
+     text-align: left;
+ }
+
+ /*boton taza*/
+ #botonlogin {
+     height: 90px;
+     width: 95px;
+     float: right;
+     display: block;
+     margin-left: 250px;
+     background-color: transparent;
+     background-size: 95px;
+     background-position: right;
+     border: none;
+     background-image: url("https://www.pngmart.com/files/21/Coffee-PNG-Isolated-HD.png");
+ }
+
+ /*tamaño del boton logo cuando paso el cursor*/
+ #botonlogin:hover {
+     transform: scale(1.5);
+ }
+
+ /*caja de menu desplegable*/
+ .menudesplegable {
+     display: none;
+     position: absolute;
+     font-style: normal;
+     background-color: transparent;
+     font-size: 33px;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+     margin-top: 100px;
+     right: 100px;
+     left: auto;
+     margin-left: 0;
+ }
+
+ .menudesplegable a {
+     font-family: monospace;
+     font-style: normal;
+     font-size: 18px;
+     color: #333;
+     border: solid;
+     border-radius: 10px;
+     padding: 10px 14px;
+     text-decoration: none;
+     display: block;
+ }
+
+ /*boton de primera vez e inicio*/
+ .cuerpo {
+     font-family: monospace;
+     background: none;
+     margin: 50px;
+     padding: 20px;
+     width: none;
+     height: 400px;
+     text-align: left;
+     border: none;
+ }
+
+ /*registro de usuario*/
+ .contenedorRegistro {
+     display: none;
+     margin-top: 50px;
+     padding: 10px;
+     background-color: transparent;
+ }
+
+ /*estilo del contenedor del formulario*/
+ .contenedorRegistro .formulario {
+     display: flex;
+     flex-direction: column;
+ }
+
+ #SignUp {
+     margin-right: auto;
+ }
+
+ /*primera vez*/
+ #tituloRegistro {
+     font-size: 25px;
+ }
+
+ /*posicion de registro y usuario*/
+ .contenedorRegistro .grupodeinput {
+     align-items: start;
+     flex-direction: column;
+     margin-bottom: 15px;
+ }
+
+ /*por cada cosa q contiene tanto el registro como el usuario*/
+ .contenedorRegistro .input-field {
+     position: relative;
+     margin-bottom: 10px;
+ }
+
+
+
+ .contenedorRegistro input[type="text"],
+ .contenedorRegistro input[type="email"],
+ .contenedorRegistro input[type="password"] {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+ }
+
+ .contenedorRegistro .btn-field {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /*boton sin tocar*/
+ .contenedorRegistro button {
+     padding: 10px 20px;
+     background-color: #2db61d;
+     color: #fff;
+     /*color de las letras del boton*/
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ /*cuanto me poso arriba del boton*/
+ .contenedorRegistro button:hover {
+     background-color: #4535b0;
+ }
+
+ /*inicio*/
+ #inicio {
+     font-size: 25px;
+     font-family: monospace;
+ }
+
+ .contenedorLogin {
+     display: none;
+     margin-top: 50px;
+     padding: 10px;
+     background-color: transparent;
+
+ }
+
+ .contenedorLogin .formulario {
+     align-items: end;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .contenedorLogin .grupodeinput {
+     margin-left: 150px;
+     margin-bottom: 10 px;
+     flex-direction: column;
+ }
+
+ .contenedorLogin .input-field {
+     position: relative;
+     margin-bottom: none;
+ }
+
+
+ .contenedorLogin input[type="email"],
+ .contenedorLogin input[type="password"] {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     justify-content: end;
+     margin-bottom: 10px;
+ }
+
+
+ .contenedorLogin .btn-field {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .contenedorLogin button {
+     padding: 10px 20px;
+     background-color: #45319e;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-left: auto;
+ }
+
+ .contenedorLogin button:hover {
+     background-color: #32de94;
+ }
+
+ .contenedorLogin p {
+     text-align: center;
+     margin-bottom: 10px;
+ }
+
+ .contenedorLogin a {
+     color: #F1916D;
+     text-decoration: none;
+ }
+
+ /*fin de login*/
+
+ /*lista de tareas*/
+ h2 {
+     font-family: monospace;
+ }
+
+ .text {
+     font-family: monospace;
+     border-radius: 5px;
+     text-align: right;
+     background: transparent;
+ }
+
+ .button {
+     background: local;
+     border-radius: 5px;
+     text-align: right;
+ }
+
+ /*estilo del div de fondo*/
+ .contenedorLista {
+     padding: 20px;
+     font-family: monospace;
+     font-style: normal;
+     color: #000;
+     font-weight: bold;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ /*contenedor de subtitulo estilo de agregar tareas*/
+ .contenedorLista label {
+     font-family: monospace;
+     font-size: 20px;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 5px;
+     color: #000;
+     margin-right: 5px;
+ }
+
+ /*estilo de Añadir nueva tarea*/
+ .contenedorLista input[type="text"] {
+     padding: 10px;
+     border: 1px solid #000;
+     border-radius: 5px;
+     margin-right: 10px;
+     font-size: 18px;
+
+ }
+
+ /*estilo del boton ok*/
+ .contenedorLista button {
+     padding: 8px 20px;
+     background-color: #0b6eee;
+     border: 1px solid #333;
+     border-radius: 5px;
+     cursor: pointer;
+     font-weight: bold;
+ }
+
+ /*estilo del boton ok*/
+ .contenedorLista button:hover {
+     background-color: #14e729;
+     color: #000;
+ }
+
+ /*contenedor padre*/
+ .contenedorLista ul {
+     justify-content: left;
+     font-size: 18px;
+     margin-left: 17px;
+ }
+
+ /* margen entre cada elemento de la lista */
+ .contenedorLista li {
+     align-items: start;
+     justify-content: left;
+     margin-bottom: 15px;
+     margin-right: 5px;
+ }
+
+ /* estilo del boton para eliminar tarea */
+ .contenedorLista .enlace-eliminar {
+     margin-left: 5px;
+     text-decoration: none;
+     color: #F56848;
+ }
+
+ 
+/* estilo del checkbox de la lista que crea el usuario */
+ .contenedorLista input[type="checkbox"] {
+     transform: scale(1.5);
+     margin-bottom: 5px;
+     margin-right: 8px;
+     cursor: pointer;/*cursor cambia de forma a mano*/
+ }
+
+ 
+ #contenedorTareas {
+     justify-content: left;
+     flex-direction: column;
+ }
+
+ li {
+     text-align: left;
+     display: list-item;
+     align-items: left;
+     justify-content: space-around;
+     list-style: none;
+     margin-bottom: 50px;
+ }
+
+ .tachado {
+     text-decoration: line-through;
+ }
+
+
+ /*contenedor del carrucel*/
+ .contenedorCarrusel {
+    overflow: hidden;
+   margin-left: 300px;
+ }
+
+ #carrusel-caja {
+     -moz-animation: automatizacion 3s infinite linear;
+     -o-animation: automatizacion 3s infinite linear;
+     -webkit-animation: automatizacion 3s infinite linear;
+     animation: automatizacion 15s infinite linear;
+     -webkit-transition: all 0.75s ease;
+     -moz-transition: all 0.75s ease;
+     -ms-transition: all 0.75s ease;
+     -o-transition: all 0.75s ease;
+     transition: all 0.75s ease;
+     height: 500px;
+     width: 400%;
+ }
+
+ 
+ .imagenes {
+     height: 400px;
+     width: 70%;
+ }
+
+ .carrusel-elemento {
+     float: left;
+     width: 25%;
+ }
+
+ @-moz-keyframes automatizacion {
+     0% {
+         margin-left: 0;
+     }
+
+     20% {
+         margin-left: 0;
+     }
+
+     25% {
+         margin-left: -100%;
+     }
+
+     45% {
+         margin-left: -100%;
+     }
+
+     50% {
+         margin-left: -200%;
+     }
+
+     70% {
+         margin-left: -200%;
+     }
+
+     75% {
+         margin-left: -300%;
+     }
+
+     99% {
+         margin-left: -300%;
+     }
+
+     100% {
+         margin-left: 0;
+     }
+ }
+
+ @-webkit-keyframes automatizacion {
+     0% {
+         margin-left: 0;
+     }
+
+     20% {
+         margin-left: 0;
+     }
+
+     25% {
+         margin-left: -100%;
+     }
+
+     45% {
+         margin-left: -100%;
+     }
+
+     50% {
+         margin-left: -200%;
+     }
+
+     70% {
+         margin-left: -200%;
+     }
+
+     75% {
+         margin-left: -300%;
+     }
+
+     99% {
+         margin-left: -300%;
+     }
+
+     100% {
+         margin-left: 0;
+     }
+ }
+
+ @keyframes automatizacion {
+     0% {
+         margin-left: 0;
+     }
+
+     20% {
+         margin-left: 0;
+     }
+
+     25% {
+         margin-left: -100%;
+     }
+
+     45% {
+         margin-left: -100%;
+     }
+
+     50% {
+         margin-left: -200%;
+     }
+
+     70% {
+         margin-left: -200%;
+     }
+
+     75% {
+         margin-left: -300%;
+     }
+
+     99% {
+         margin-left: -300%;
+     }
+
+     100% {
+         margin-left: 0;
+     }
+ }
