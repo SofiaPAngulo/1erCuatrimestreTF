@@ -11,7 +11,7 @@ function openRegistro() {
   var contenedorRegistro = document.getElementById("contenedorRegistro");
   var contenedorLogin = document.getElementById("contenedorLogin");
   var contenedorLista = document.getElementById("contenedorLista");
-
+  
   contenedorRegistro.style.display = "block";
   contenedorLogin.style.display = "none";
   contenedorLista.style.display = "none";
